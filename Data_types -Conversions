@@ -23,6 +23,29 @@ print(a,b)
 #it halfs the nymber
 a=1
 k=bin(a)
+
+
+%%writefile con1.py
+
+print("*******welcome to park*******")
+age=int(input("enter your AGE:"))
+if age<18:
+    print("your prohibited")
+
+elif age>25 and age<35:
+    print("your partially allowed")
+elif age>35 and age<60:
+    print("you can enjoy every where")
+else:
+    print("no entry")
+
+
+%%writefile pat1.py
+n=5
+for i in range(0,n,1):
+    for j in range(i,n,1):
+        print(j,end="")
+    print( "")
 print(k)
 print(a>>1)
 
