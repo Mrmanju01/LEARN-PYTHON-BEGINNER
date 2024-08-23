@@ -118,3 +118,81 @@ u_s=email[:ind]
 domain=email[ind+1:]
 
 print(f"yours {u_s} and domain is {domain}")
+
+
+S=' "HEY!!!" my name is 'Manju' '
+print(S)
+
+
+------------------
+str="manjunathareddy"
+print(str[-1])
+
+for i in str:
+	print(s[i])
+
+***********
+st="python"
+print(id(st))
+
+s1="p"
+s2="p"
+print(id(s1))
+print(id(s2))
+
+---------------
+st1="manju"
+print(st1[0:])
+print(st1[0:5])
+print(st1[5:0])
+print(st1[:-1])
+print(st1[-5:])
+print(st1[-5:0])
+print(st1[-5:0:-1])
+print(st1[0:5:2])
+
+-------------------------
+st2="India"
+ for i in range(0,len(st2)-2):
+	print(s[i:i+3])
+--------------------------------
+St3="python"
+k=st3[-1:]
+if St3==k:
+	print(k)
+else:
+	print("not in reverse")
+-------------------------------------
+st4="Just Doing Coding"
+print(st4.capitalize())
+print(st4.lower())
+print(st4.upper())
+print(st4.swapcase())
+print(st4.title())
+print(st4.find("D"))
+print(st4.replace("Coding","Sleeping"))
+if  st4.isupper():
+	print("Its having upper")
+elif st4.islower():
+	print("Its having lower")
+elif st4.isnumeric():
+	print("Its having numericals")
+else:
+	print("Its having special characters")
+*******************
+s="Error found at 404 page"
+tb=s.maketrans("aeiou","AEIOU","0123456789")
+print(s.translate(tb))
+print(s)
+**************
+map()=converts string  to numbers
+import functions
+num=input("enter number\n").split()
+print(num)
+#print(num.split(""))
+print(type(num))
+k=list(map(int,num))
+print(k)
+re=reduce(lambda x,y:x+y,k)
+print(re/len(k))
+***************
